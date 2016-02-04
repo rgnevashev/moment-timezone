@@ -1,7 +1,7 @@
 
 Package.describe({
   name: 'rgnevashev:moment-timezone',
-  version: '0.5.0-2015g',
+  version: '0.5.0',
   summary: 'Parse and display moments in any timezone.',
   git: 'https://github.com/moment/moment-timezone.git',
   documentation: 'README.md'
