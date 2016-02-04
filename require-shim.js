@@ -19,7 +19,7 @@
     this.__AC_OLD_MODULE = this.module;
   }
   this.module = {
-	exports: {}
+	  exports: {}
   };
 
   if (this.exports !== undefined) {

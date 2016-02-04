@@ -8,22 +8,12 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.1');
+  //api.versionsFrom('1.2.1');
   api.use('momentjs:moment@2.11.1');
-  api.imply('momentjs:moment');  
+  api.imply('momentjs:moment');
   api.addFiles([
     'require-shim.js',
     'builds/moment-timezone-with-data.js',
     'revert-require-shim.js'
   ], ['client', 'server']);
-}); 
-
-Package.onTest(function (api) {
-  api.use([
-    'rgnevashev:moment-timezone',
-    'tinytest',
-    'test-helpers'
-  ], ['client', 'server']);
-
-  api.addFiles('test-moment-timezone.js', ['client', 'server']);
 });
